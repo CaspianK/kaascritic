@@ -1,0 +1,1690 @@
+* {
+  margin: 0%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  min-width: 330px;
+}
+
+.closebutton {
+  position: absolute;
+  width: 25px;
+  top: 10px;
+  right: 10px;
+}
+
+.closebutton:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  color: #ffcc34;
+}
+
+.bg {
+  background-color: rgba(27, 27, 27, 0.4);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signupbg, .loginbg {
+  display: none;
+}
+
+.whiteLink {
+  color: white;
+}
+
+.category_block {
+  text-align: center;
+}
+
+.category_block h2 {
+  text-align: left;
+}
+
+.nextl, .nextr {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .done {
+    display: none;
+    opacity: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+  }
+  .done p {
+    font-size: 150%;
+    padding: 10px;
+    background-color: #ffcc34;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+  .container {
+    width: 1280px;
+    margin: 0% auto;
+    background-color: white;
+  }
+  .lastTitle {
+    padding-top: 10px;
+  }
+  .category_block .title, .block {
+    padding-top: 40px;
+    margin: 0px 50px;
+  }
+  .lastTitle {
+    padding-top: 10px;
+    margin: 0px 50px;
+  }
+  .loginwrap, .signupwrap {
+    width: 350px;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+  }
+  .loginwrap h2, .signupwrap h2 {
+    font-size: 200%;
+    margin-top: 20px;
+  }
+  .loginwrap p, .signupwrap p {
+    margin-top: 10px;
+    font-size: 100%;
+    margin-bottom: 20px;
+  }
+  .loginwrap p:hover, .signupwrap p:hover {
+    color: #ffcc34;
+    cursor: pointer;
+  }
+  .loginwrap input, .signupwrap input {
+    width: 250px;
+    border: #c4c4c4 1px solid;
+  }
+  .loginwrap button, .signupwrap button {
+    background-color: #ffcc34;
+    width: 273px;
+    color: white;
+    border: #ffcc34 2px solid;
+  }
+  .loginwrap button:hover, .signupwrap button:hover {
+    cursor: pointer;
+  }
+  .loginwrap button, .loginwrap input, .signupwrap button, .signupwrap input {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 110%;
+    border-radius: 10px;
+  }
+  .loginwrap .gender, .signupwrap .gender {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: 5px;
+  }
+  .loginwrap span, .signupwrap span {
+    margin-right: 15px;
+  }
+  .category_block .title, .category_block .lastTitle {
+    font-size: 200%;
+  }
+  .nextgame {
+    margin-top: 132.5px;
+  }
+  .nextnews {
+    margin-top: 75px;
+  }
+  .nextr, .nextl {
+    display: block;
+    position: absolute;
+    height: 50px;
+    width: 60px;
+    z-index: 9;
+  }
+  .nextr img, .nextl img {
+    width: 25px;
+  }
+  .nextr img:hover, .nextl img:hover {
+    cursor: pointer;
+  }
+  .nextl {
+    left: calc((100% - 1280px) / 2);
+  }
+  .nextr {
+    left: calc((100% - 1280px) / 2 + 1220px);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  .done {
+    display: none;
+    opacity: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+  }
+  .done p {
+    font-size: 150%;
+    padding: 10px;
+    background-color: #ffcc34;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+  .container {
+    width: 100%;
+    margin: 0% auto;
+    background-color: white;
+  }
+  .lastTitle {
+    padding-top: 10px;
+  }
+  .category_block .title, .block {
+    padding-top: 40px;
+    margin: 0px 50px;
+  }
+  .lastTitle {
+    padding-top: 10px;
+    margin: 0px 50px;
+  }
+  .loginwrap, .signupwrap {
+    width: 350px;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+  }
+  .loginwrap h2, .signupwrap h2 {
+    font-size: 200%;
+    margin-top: 20px;
+  }
+  .loginwrap p, .signupwrap p {
+    margin-top: 10px;
+    font-size: 100%;
+    margin-bottom: 20px;
+  }
+  .loginwrap p:hover, .signupwrap p:hover {
+    color: #ffcc34;
+    cursor: pointer;
+  }
+  .loginwrap input, .signupwrap input {
+    width: 250px;
+    border: #c4c4c4 1px solid;
+  }
+  .loginwrap button, .signupwrap button {
+    background-color: #ffcc34;
+    width: 273px;
+    color: white;
+    border: #ffcc34 2px solid;
+  }
+  .loginwrap button:hover, .signupwrap button:hover {
+    cursor: pointer;
+  }
+  .loginwrap button, .loginwrap input, .signupwrap button, .signupwrap input {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 110%;
+    border-radius: 10px;
+  }
+  .loginwrap .gender, .signupwrap .gender {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: 5px;
+  }
+  .loginwrap span, .signupwrap span {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .done {
+    display: none;
+    opacity: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+  }
+  .done p {
+    font-size: 120%;
+    padding: 10px;
+    background-color: #ffcc34;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+  .container {
+    width: 100%;
+    margin: 0% auto;
+    background-color: white;
+  }
+  .lastTitle {
+    padding-top: 10px;
+  }
+  .category_block .title, .block {
+    padding-top: 30px;
+    margin: 0px 25px;
+  }
+  .lastTitle {
+    padding-top: 10px;
+    margin: 0px 25px;
+  }
+  .loginwrap, .signupwrap {
+    width: 300px;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+  }
+  .loginwrap h2, .signupwrap h2 {
+    font-size: 150%;
+    margin-top: 20px;
+  }
+  .loginwrap p, .signupwrap p {
+    margin-top: 10px;
+    font-size: 90%;
+    margin-bottom: 20px;
+  }
+  .loginwrap p:hover, .signupwrap p:hover {
+    color: #ffcc34;
+    cursor: pointer;
+  }
+  .loginwrap input, .signupwrap input {
+    width: 220px;
+    border: #c4c4c4 1px solid;
+  }
+  .loginwrap button, .signupwrap button {
+    background-color: #ffcc34;
+    width: 243px;
+    color: white;
+    border: #ffcc34 2px solid;
+  }
+  .loginwrap button:hover, .signupwrap button:hover {
+    cursor: pointer;
+  }
+  .loginwrap button, .loginwrap input, .signupwrap button, .signupwrap input {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 90%;
+    border-radius: 10px;
+  }
+  .loginwrap .gender, .signupwrap .gender {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: 5px;
+  }
+  .loginwrap span, .signupwrap span {
+    margin-right: 7px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .done {
+    display: none;
+    opacity: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+  }
+  .done p {
+    font-size: 120%;
+    padding: 10px;
+    background-color: #ffcc34;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+  .container {
+    width: 100%;
+    margin: 0% auto;
+    background-color: white;
+  }
+  .lastTitle {
+    padding-top: 10px;
+  }
+  .category_block .title, .block {
+    padding-top: 20px;
+    margin: 0px 2.5%;
+  }
+  .lastTitle {
+    padding-top: 10px;
+    margin: 0px 2.5%;
+  }
+  .loginwrap, .signupwrap {
+    width: 250px;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+  }
+  .loginwrap h2, .signupwrap h2 {
+    font-size: 120%;
+    margin-top: 20px;
+  }
+  .loginwrap p, .signupwrap p {
+    margin-top: 10px;
+    font-size: 90%;
+    margin-bottom: 20px;
+  }
+  .loginwrap p:hover, .signupwrap p:hover {
+    color: #ffcc34;
+    cursor: pointer;
+  }
+  .loginwrap input, .signupwrap input {
+    width: 180px;
+    border: #c4c4c4 1px solid;
+  }
+  .loginwrap button, .signupwrap button {
+    background-color: #ffcc34;
+    width: 203px;
+    color: white;
+    border: #ffcc34 2px solid;
+  }
+  .loginwrap button:hover, .signupwrap button:hover {
+    cursor: pointer;
+  }
+  .loginwrap button, .loginwrap input, .signupwrap button, .signupwrap input {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 90%;
+    border-radius: 10px;
+  }
+  .loginwrap .gender, .signupwrap .gender {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: 5px;
+  }
+  .loginwrap span, .signupwrap span {
+    margin-right: 5px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .featured_slide {
+    display: none;
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: .7;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: .7;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .featured_1 {
+    background-image: url(../img/covers/main1.png);
+  }
+  .featured_2 {
+    background-image: url(../img/covers/main2.png);
+  }
+  .featured_3 {
+    background-image: url(../img/covers/main3.png);
+  }
+  .featured_4 {
+    background-image: url(../img/covers/main4.png);
+  }
+  .new {
+    margin-top: 50px;
+    background-color: black;
+    text-align: center;
+    color: white;
+  }
+  .new h1 {
+    padding-top: 40px;
+    font-size: 300%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  .featured_slide {
+    display: none;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: .7;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: .7;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .featured_1 {
+    background-image: url(../img/covers/main1.png);
+  }
+  .featured_2 {
+    background-image: url(../img/covers/main2.png);
+  }
+  .featured_3 {
+    background-image: url(../img/covers/main3.png);
+  }
+  .featured_4 {
+    background-image: url(../img/covers/main4.png);
+  }
+  .new {
+    margin-top: 50px;
+    background-color: black;
+    text-align: center;
+    color: white;
+  }
+  .new h1 {
+    padding-top: 40px;
+    font-size: 300%;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .featured_slide {
+    display: none;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: .7;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: .7;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .featured_1 {
+    background-image: url(../img/covers/main1.png);
+  }
+  .featured_2 {
+    background-image: url(../img/covers/main2.png);
+  }
+  .featured_3 {
+    background-image: url(../img/covers/main3.png);
+  }
+  .featured_4 {
+    background-image: url(../img/covers/main4.png);
+  }
+  .new {
+    margin-top: 25px;
+    background-color: black;
+    text-align: center;
+    color: white;
+  }
+  .new h1 {
+    padding-top: 30px;
+    font-size: 200%;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .featured_slide {
+    display: none;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: .7;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: .7;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .featured_1 {
+    background-image: url(../img/covers/main1.png);
+  }
+  .featured_2 {
+    background-image: url(../img/covers/main2.png);
+  }
+  .featured_3 {
+    background-image: url(../img/covers/main3.png);
+  }
+  .featured_4 {
+    background-image: url(../img/covers/main4.png);
+  }
+  .new {
+    margin-top: 25px;
+    background-color: black;
+    text-align: center;
+    color: white;
+  }
+  .new h1 {
+    padding-top: 30px;
+    font-size: 150%;
+  }
+  .new h1 {
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  .games {
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .games::-webkit-scrollbar {
+    display: none;
+  }
+  .last {
+    padding-bottom: 40px;
+  }
+  .game {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin-right: 32.5px;
+    cursor: pointer;
+  }
+  .game h3 {
+    max-width: 210px;
+    margin-top: 10px;
+    font-size: 150%;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  .game .newsTitle, .game .newsParagraph {
+    max-width: 371.7px;
+  }
+  .thumbnail {
+    width: 210px;
+    height: 315px;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  .gamefiller {
+    height: 315px;
+  }
+  .newsfiller {
+    width: 18px;
+    height: 200px;
+  }
+  .thumbnail_news {
+    width: 371.7px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .filler {
+    width: 17.5px;
+  }
+  .games_new {
+    padding: 50px 17.5px 50px 50px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  .games {
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .games::-webkit-scrollbar {
+    display: none;
+  }
+  .last {
+    padding-bottom: 40px;
+  }
+  .game {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin-right: 32.5px;
+    cursor: pointer;
+  }
+  .game h3 {
+    max-width: 210px;
+    margin-top: 10px;
+    font-size: 150%;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  .game .newsTitle, .game .newsParagraph {
+    max-width: 371.7px;
+  }
+  .thumbnail {
+    width: 210px;
+    height: 315px;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  .gamefiller {
+    height: 315px;
+  }
+  .newsfiller {
+    width: 18px;
+    height: 200px;
+  }
+  .thumbnail_news {
+    width: 371.7px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .filler {
+    width: 17.5px;
+  }
+  .games_new {
+    padding: 50px 17.5px 50px 50px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .games {
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .games::-webkit-scrollbar {
+    display: none;
+  }
+  .last {
+    padding-bottom: 40px;
+  }
+  .game {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin-right: 28px;
+    cursor: pointer;
+  }
+  .game h3 {
+    max-width: 140px;
+    margin-top: 10px;
+    font-size: 120%;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  .game .newsTitle, .game .newsParagraph {
+    max-width: 250px;
+  }
+  .thumbnail {
+    width: 140px;
+    height: 210px;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  .gamefiller {
+    height: 210px;
+  }
+  .newsfiller {
+    width: 18px;
+    height: 150px;
+  }
+  .thumbnail_news {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+  }
+  .filler {
+    width: 3px;
+  }
+  .games_new {
+    padding: 25px 17.5px 40px 25px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .games {
+    padding-left: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .games::-webkit-scrollbar {
+    display: none;
+  }
+  .last {
+    padding-bottom: 40px;
+  }
+  .game {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin-right: 28px;
+    cursor: pointer;
+  }
+  .game h3 {
+    max-width: 140px;
+    margin-top: 10px;
+    font-size: 120%;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  .game .newsTitle, .game .newsParagraph {
+    max-width: 250px;
+  }
+  .thumbnail {
+    width: 140px;
+    height: 210px;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  .gamefiller {
+    height: 210px;
+  }
+  .newsfiller {
+    width: 18px;
+    height: 150px;
+  }
+  .thumbnail_news {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+  }
+  .filler {
+    width: 0.1px;
+  }
+  .games_new {
+    padding: 2.5% 17.5px 30px 2.5%;
+  }
+}
+
+.header {
+  background-color: black;
+  color: white;
+  height: 60px;
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 99;
+  top: 0;
+}
+
+.header .menulink {
+  text-decoration: none;
+  color: white;
+}
+
+.header .selected {
+  color: #ffcc34;
+}
+
+.logo img {
+  width: 170px;
+  cursor: pointer;
+}
+
+.menu_item {
+  margin-left: 40px;
+  cursor: pointer;
+}
+
+.smallmenu_item {
+  color: white;
+  width: 100%;
+  text-align: center;
+  padding-top: 20px;
+  font-size: 150%;
+}
+
+@media screen and (min-width: 1280px) {
+  .container_header {
+    width: 1180px;
+    background-color: black;
+    z-index: 2;
+    padding-top: 7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu {
+    padding-top: 10px;
+    font-size: 120%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu .burgericon {
+    display: none;
+  }
+  .smallmenu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  .container_header {
+    width: calc(100% - 100px);
+    background-color: black;
+    z-index: 2;
+    padding-top: 7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu {
+    padding-top: 10px;
+    font-size: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu .burgericon {
+    display: none;
+  }
+  .smallmenu {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .container_header {
+    width: calc(100% - 50px);
+    background-color: black;
+    z-index: 2;
+    padding-top: 7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu {
+    padding-top: 10px;
+    font-size: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu .burgericon {
+    width: 40px;
+  }
+  .smallmenu {
+    z-index: 10;
+    background-color: black;
+    height: 230px;
+    display: none;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    z-index: 99;
+    top: 60px;
+  }
+  .smallmenu .menulink {
+    text-decoration: none;
+    color: white;
+  }
+  .smallmenu .selected {
+    color: #ffcc34;
+  }
+  .menu_item {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .container_header {
+    width: 95%;
+    background-color: black;
+    z-index: 2;
+    padding-top: 7px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu {
+    padding-top: 10px;
+    font-size: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .menu .burgericon {
+    width: 40px;
+  }
+  .smallmenu {
+    z-index: 10;
+    background-color: black;
+    height: 230px;
+    display: none;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    z-index: 99;
+    top: 60px;
+  }
+  .smallmenu .menulink {
+    text-decoration: none;
+    color: white;
+  }
+  .smallmenu .selected {
+    color: #ffcc34;
+  }
+  .menu_item {
+    display: none;
+  }
+}
+
+.footer {
+  background-color: black;
+  color: white;
+  height: 60px;
+}
+
+.footer img {
+  width: 35px;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.reserved {
+  padding-top: 14px;
+}
+
+.red::-webkit-input-placeholder {
+  color: red;
+}
+
+.red:-ms-input-placeholder {
+  color: red;
+}
+
+.red::-ms-input-placeholder {
+  color: red;
+}
+
+.red::placeholder {
+  color: red;
+}
+
+.mapbg, .subbg {
+  display: none;
+}
+
+.mapwrap {
+  background-color: #ebe9e5;
+  border-radius: 15px;
+  position: relative;
+}
+
+.whereBuy {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.whereBuy:hover {
+  cursor: pointer;
+}
+
+.coverwrap, h1, h2, .nextl, .nextr {
+  opacity: 0;
+}
+
+.cover {
+  background-size: cover;
+  background-position: center;
+}
+
+.cover .companylogo {
+  color: white;
+  text-align: center;
+}
+
+.cover .companylogo img {
+  width: inherit;
+}
+
+.moralescover {
+  background-image: url("../img/covers/ps.png");
+}
+
+.xboxcover {
+  background-image: url("../img/covers/xbox.png");
+}
+
+.mariocover {
+  background-image: url("../img/covers/mario.png");
+}
+
+.new {
+  margin-top: 0%;
+  background-color: white;
+  color: black;
+}
+
+.parallax {
+  background-position: center;
+  background-size: cover;
+}
+
+.buttoncontainer {
+  color: white;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.button {
+  width: inherit;
+  height: inherit;
+  cursor: pointer;
+  -webkit-box-shadow: 5px 5px 80px black;
+          box-shadow: 5px 5px 80px black;
+}
+
+.psparallax {
+  background-image: url(../img/covers/pscover.png);
+}
+
+.xboxparallax {
+  background-image: url(../img/covers/xcover.png);
+}
+
+.switchparallax {
+  background-image: url(../img/covers/switchcover.png);
+}
+
+.dimmed {
+  width: inherit;
+  height: inherit;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.psbutton {
+  background-color: #36109a;
+}
+
+.xboxbutton {
+  background-color: #107c10;
+}
+
+.switchbutton {
+  background-color: #d41f28;
+}
+
+@media screen and (min-width: 1280px) {
+  .cover {
+    height: 400px;
+  }
+  #map {
+    margin-top: 10px;
+    width: 700px;
+    height: 500px;
+    border-radius: 15px;
+  }
+  #map h2 {
+    opacity: 1;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+  #map .psbuttonlink {
+    color: #c82621;
+  }
+  #map .psbuttonlink:active {
+    color: #ffcc34;
+  }
+  h2 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 170%;
+  }
+  .xboxlogo {
+    padding-top: 80px;
+    padding-left: 200px;
+    width: 200px;
+  }
+  .xboxlogo .whereBuy {
+    padding-top: 5px;
+    font-size: 110%;
+    color: #107c10;
+  }
+  .subwrap {
+    width: 350px;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+  }
+  .subwrap h2 {
+    font-size: 200%;
+    margin-top: 20px;
+  }
+  .subwrap p {
+    margin-top: 5px;
+    font-size: 100%;
+  }
+  .subwrap input {
+    width: 250px;
+  }
+  .subwrap button {
+    background-color: #ffcc34;
+    width: 273px;
+    margin-bottom: 25px;
+    color: white;
+  }
+  .subwrap button:hover {
+    cursor: pointer;
+  }
+  .subwrap button, .subwrap input {
+    padding: 10px;
+    border: #ffcc34 2px solid;
+    margin-top: 15px;
+    font-size: 120%;
+    border-radius: 10px;
+  }
+  .switchlogo {
+    padding-top: 70px;
+    padding-left: 120px;
+    width: 230px;
+  }
+  .switchlogo .whereBuy {
+    font-size: 110%;
+    color: #2063a7;
+  }
+  .pslogo {
+    padding-top: 120px;
+    padding-left: 60px;
+    width: 300px;
+  }
+  .pslogo .motto {
+    font-size: 170%;
+  }
+  .pslogo .whereBuy {
+    padding-top: 5px;
+    font-size: 110%;
+    color: #c82621;
+  }
+  .parallax {
+    height: 400px;
+  }
+  .buttoncontainer {
+    font-size: 180%;
+    height: 70px;
+    padding-top: 160px;
+  }
+  .psbuttoncontainer {
+    width: 270px;
+  }
+  .xboxbuttoncontainer {
+    width: 300px;
+  }
+  .switchbuttoncontainer {
+    width: 340px;
+  }
+  .button p {
+    padding-top: 20px;
+  }
+  .parallax {
+    background-attachment: fixed;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  .cover {
+    height: 400px;
+  }
+  #map {
+    margin-top: 10px;
+    width: 500px;
+    height: 300px;
+    border-radius: 15px;
+  }
+  #map h2 {
+    opacity: 1;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+  #map .psbuttonlink {
+    color: #c82621;
+  }
+  #map .psbuttonlink:active {
+    color: #ffcc34;
+  }
+  h2 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 150%;
+  }
+  .subwrap {
+    width: 350px;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+  }
+  .subwrap h2 {
+    font-size: 200%;
+    margin-top: 20px;
+  }
+  .subwrap p {
+    margin-top: 5px;
+    font-size: 100%;
+  }
+  .subwrap input {
+    width: 250px;
+  }
+  .subwrap button {
+    background-color: #ffcc34;
+    width: 273px;
+    margin-bottom: 25px;
+    color: white;
+  }
+  .subwrap button:hover {
+    cursor: pointer;
+  }
+  .subwrap button, .subwrap input {
+    padding: 10px;
+    border: #ffcc34 2px solid;
+    margin-top: 15px;
+    font-size: 120%;
+    border-radius: 10px;
+  }
+  .xboxlogo {
+    padding-top: 109px;
+    padding-left: 150px;
+    width: 150px;
+  }
+  .xboxlogo .whereBuy {
+    padding-top: 5px;
+    font-size: 110%;
+    color: #107c10;
+  }
+  .switchlogo {
+    padding-top: 93.5px;
+    padding-left: 80px;
+    width: 190px;
+  }
+  .switchlogo .whereBuy {
+    font-size: 110%;
+    color: #2063a7;
+  }
+  .pslogo {
+    padding-top: 132.5px;
+    padding-left: 30px;
+    width: 300px;
+  }
+  .pslogo .motto {
+    font-size: 150%;
+  }
+  .pslogo .whereBuy {
+    padding-top: 5px;
+    font-size: 110%;
+    color: #c82621;
+  }
+  .parallax {
+    height: 400px;
+  }
+  .buttoncontainer {
+    font-size: 180%;
+    height: 70px;
+    padding-top: 160px;
+  }
+  .psbuttoncontainer {
+    width: 270px;
+  }
+  .xboxbuttoncontainer {
+    width: 300px;
+  }
+  .switchbuttoncontainer {
+    width: 340px;
+  }
+  .button p {
+    padding-top: 20px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .cover {
+    height: 200px;
+  }
+  #map {
+    margin-top: 10px;
+    width: 380px;
+    height: 300px;
+    border-radius: 15px;
+  }
+  #map h2 {
+    opacity: 1;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+  #map .psbuttonlink {
+    color: #c82621;
+  }
+  #map .psbuttonlink:active {
+    color: #ffcc34;
+  }
+  h2 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 120%;
+  }
+  .subwrap {
+    width: 300px;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+  }
+  .subwrap h2 {
+    font-size: 150%;
+    margin-top: 20px;
+  }
+  .subwrap p {
+    margin-top: 5px;
+    font-size: 90%;
+  }
+  .subwrap input {
+    width: 220px;
+  }
+  .subwrap button {
+    background-color: #ffcc34;
+    width: 243px;
+    margin-bottom: 25px;
+    color: white;
+  }
+  .subwrap button:hover {
+    cursor: pointer;
+  }
+  .subwrap button, .subwrap input {
+    padding: 10px;
+    border: #ffcc34 2px solid;
+    margin-top: 15px;
+    font-size: 100%;
+    border-radius: 10px;
+  }
+  .xboxlogo {
+    padding-top: 35.5px;
+    padding-left: 60px;
+    width: 100px;
+  }
+  .xboxlogo .whereBuy {
+    padding-top: 5px;
+    font-size: 100%;
+    color: #107c10;
+  }
+  .switchlogo {
+    padding-top: 39px;
+    padding-left: 40px;
+    width: 100px;
+  }
+  .switchlogo .whereBuy {
+    font-size: 100%;
+    color: #2063a7;
+  }
+  .pslogo {
+    padding-top: 52.5px;
+    padding-left: 30px;
+    width: 180px;
+  }
+  .pslogo .motto {
+    font-size: 110%;
+  }
+  .pslogo .whereBuy {
+    padding-top: 5px;
+    font-size: 100%;
+    color: #c82621;
+  }
+  .parallax {
+    height: 200px;
+  }
+  .buttoncontainer {
+    font-size: 120%;
+    height: 50px;
+    padding-top: 75px;
+  }
+  .psbuttoncontainer {
+    width: 180px;
+  }
+  .xboxbuttoncontainer {
+    width: 200px;
+  }
+  .switchbuttoncontainer {
+    width: 240px;
+  }
+  .button p {
+    padding-top: 15px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .cover {
+    height: 200px;
+  }
+  #map {
+    margin-top: 10px;
+    width: 330px;
+    height: 300px;
+    border-radius: 15px;
+  }
+  #map h2 {
+    opacity: 1;
+    margin-bottom: 5px;
+    margin-right: 5px;
+  }
+  #map .psbuttonlink {
+    color: #c82621;
+  }
+  #map .psbuttonlink:active {
+    color: #ffcc34;
+  }
+  h2 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 120%;
+  }
+  .xboxlogo {
+    padding-top: 41px;
+    padding-left: 40px;
+    width: 90px;
+  }
+  .xboxlogo .whereBuy {
+    padding-top: 5px;
+    font-size: 90%;
+    color: #107c10;
+  }
+  .subwrap {
+    width: 250px;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+  }
+  .subwrap h2 {
+    font-size: 120%;
+    margin-top: 20px;
+  }
+  .subwrap p {
+    margin-top: 5px;
+    font-size: 90%;
+  }
+  .subwrap input {
+    width: 180px;
+  }
+  .subwrap button {
+    background-color: #ffcc34;
+    width: 203px;
+    margin-bottom: 25px;
+    color: white;
+  }
+  .subwrap button:hover {
+    cursor: pointer;
+  }
+  .subwrap button, .subwrap input {
+    padding: 10px;
+    border: #ffcc34 2px solid;
+    margin-top: 15px;
+    font-size: 100%;
+    border-radius: 10px;
+  }
+  .switchlogo {
+    padding-top: 50.5px;
+    padding-left: 30px;
+    width: 80px;
+  }
+  .switchlogo .whereBuy {
+    font-size: 85%;
+    color: #2063a7;
+  }
+  .pslogo {
+    padding-top: 52.5px;
+    padding-left: 20px;
+    width: 150px;
+  }
+  .pslogo .motto {
+    font-size: 100%;
+  }
+  .pslogo .whereBuy {
+    padding-top: 5px;
+    font-size: 90%;
+    color: #c82621;
+  }
+  .parallax {
+    height: 200px;
+  }
+  .buttoncontainer {
+    font-size: 120%;
+    height: 50px;
+    padding-top: 75px;
+  }
+  .psbuttoncontainer {
+    width: 180px;
+  }
+  .xboxbuttoncontainer {
+    width: 200px;
+  }
+  .switchbuttoncontainer {
+    width: 240px;
+  }
+  .button p {
+    padding-top: 15px;
+  }
+}
+/*# sourceMappingURL=consolepage.css.map */

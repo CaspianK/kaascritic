@@ -1,0 +1,432 @@
+* {
+  margin: 0%;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  min-width: 330px;
+}
+
+.closebutton {
+  position: absolute;
+  width: 25px;
+  top: 10px;
+  right: 10px;
+}
+
+.closebutton:hover {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:active {
+  color: #ffcc34;
+}
+
+.bg {
+  background-color: rgba(27, 27, 27, 0.4);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  z-index: 1;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.signupbg, .loginbg {
+  display: none;
+}
+
+.whiteLink {
+  color: white;
+}
+
+.category_block {
+  text-align: center;
+}
+
+.category_block h2 {
+  text-align: left;
+}
+
+.nextl, .nextr {
+  display: none;
+}
+
+@media screen and (min-width: 1280px) {
+  .done {
+    display: none;
+    opacity: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+  }
+  .done p {
+    font-size: 150%;
+    padding: 10px;
+    background-color: #ffcc34;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+  .container {
+    width: 1280px;
+    margin: 0% auto;
+    background-color: white;
+  }
+  .lastTitle {
+    padding-top: 10px;
+  }
+  .category_block .title, .block {
+    padding-top: 40px;
+    margin: 0px 50px;
+  }
+  .lastTitle {
+    padding-top: 10px;
+    margin: 0px 50px;
+  }
+  .loginwrap, .signupwrap {
+    width: 350px;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+  }
+  .loginwrap h2, .signupwrap h2 {
+    font-size: 200%;
+    margin-top: 20px;
+  }
+  .loginwrap p, .signupwrap p {
+    margin-top: 10px;
+    font-size: 100%;
+    margin-bottom: 20px;
+  }
+  .loginwrap p:hover, .signupwrap p:hover {
+    color: #ffcc34;
+    cursor: pointer;
+  }
+  .loginwrap input, .signupwrap input {
+    width: 250px;
+    border: #c4c4c4 1px solid;
+  }
+  .loginwrap button, .signupwrap button {
+    background-color: #ffcc34;
+    width: 273px;
+    color: white;
+    border: #ffcc34 2px solid;
+  }
+  .loginwrap button:hover, .signupwrap button:hover {
+    cursor: pointer;
+  }
+  .loginwrap button, .loginwrap input, .signupwrap button, .signupwrap input {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 110%;
+    border-radius: 10px;
+  }
+  .loginwrap .gender, .signupwrap .gender {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: 5px;
+  }
+  .loginwrap span, .signupwrap span {
+    margin-right: 15px;
+  }
+  .category_block .title, .category_block .lastTitle {
+    font-size: 200%;
+  }
+  .nextgame {
+    margin-top: 132.5px;
+  }
+  .nextnews {
+    margin-top: 75px;
+  }
+  .nextr, .nextl {
+    display: block;
+    position: absolute;
+    height: 50px;
+    width: 60px;
+    z-index: 9;
+  }
+  .nextr img, .nextl img {
+    width: 25px;
+  }
+  .nextr img:hover, .nextl img:hover {
+    cursor: pointer;
+  }
+  .nextl {
+    left: calc((100% - 1280px) / 2);
+  }
+  .nextr {
+    left: calc((100% - 1280px) / 2 + 1220px);
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  .done {
+    display: none;
+    opacity: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+  }
+  .done p {
+    font-size: 150%;
+    padding: 10px;
+    background-color: #ffcc34;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+  .container {
+    width: 100%;
+    margin: 0% auto;
+    background-color: white;
+  }
+  .lastTitle {
+    padding-top: 10px;
+  }
+  .category_block .title, .block {
+    padding-top: 40px;
+    margin: 0px 50px;
+  }
+  .lastTitle {
+    padding-top: 10px;
+    margin: 0px 50px;
+  }
+  .loginwrap, .signupwrap {
+    width: 350px;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+  }
+  .loginwrap h2, .signupwrap h2 {
+    font-size: 200%;
+    margin-top: 20px;
+  }
+  .loginwrap p, .signupwrap p {
+    margin-top: 10px;
+    font-size: 100%;
+    margin-bottom: 20px;
+  }
+  .loginwrap p:hover, .signupwrap p:hover {
+    color: #ffcc34;
+    cursor: pointer;
+  }
+  .loginwrap input, .signupwrap input {
+    width: 250px;
+    border: #c4c4c4 1px solid;
+  }
+  .loginwrap button, .signupwrap button {
+    background-color: #ffcc34;
+    width: 273px;
+    color: white;
+    border: #ffcc34 2px solid;
+  }
+  .loginwrap button:hover, .signupwrap button:hover {
+    cursor: pointer;
+  }
+  .loginwrap button, .loginwrap input, .signupwrap button, .signupwrap input {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 110%;
+    border-radius: 10px;
+  }
+  .loginwrap .gender, .signupwrap .gender {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: 5px;
+  }
+  .loginwrap span, .signupwrap span {
+    margin-right: 15px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .done {
+    display: none;
+    opacity: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+  }
+  .done p {
+    font-size: 120%;
+    padding: 10px;
+    background-color: #ffcc34;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+  .container {
+    width: 100%;
+    margin: 0% auto;
+    background-color: white;
+  }
+  .lastTitle {
+    padding-top: 10px;
+  }
+  .category_block .title, .block {
+    padding-top: 30px;
+    margin: 0px 25px;
+  }
+  .lastTitle {
+    padding-top: 10px;
+    margin: 0px 25px;
+  }
+  .loginwrap, .signupwrap {
+    width: 300px;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+  }
+  .loginwrap h2, .signupwrap h2 {
+    font-size: 150%;
+    margin-top: 20px;
+  }
+  .loginwrap p, .signupwrap p {
+    margin-top: 10px;
+    font-size: 90%;
+    margin-bottom: 20px;
+  }
+  .loginwrap p:hover, .signupwrap p:hover {
+    color: #ffcc34;
+    cursor: pointer;
+  }
+  .loginwrap input, .signupwrap input {
+    width: 220px;
+    border: #c4c4c4 1px solid;
+  }
+  .loginwrap button, .signupwrap button {
+    background-color: #ffcc34;
+    width: 243px;
+    color: white;
+    border: #ffcc34 2px solid;
+  }
+  .loginwrap button:hover, .signupwrap button:hover {
+    cursor: pointer;
+  }
+  .loginwrap button, .loginwrap input, .signupwrap button, .signupwrap input {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 90%;
+    border-radius: 10px;
+  }
+  .loginwrap .gender, .signupwrap .gender {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: 5px;
+  }
+  .loginwrap span, .signupwrap span {
+    margin-right: 7px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .done {
+    display: none;
+    opacity: 0;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 0;
+  }
+  .done p {
+    font-size: 120%;
+    padding: 10px;
+    background-color: #ffcc34;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+  .container {
+    width: 100%;
+    margin: 0% auto;
+    background-color: white;
+  }
+  .lastTitle {
+    padding-top: 10px;
+  }
+  .category_block .title, .block {
+    padding-top: 20px;
+    margin: 0px 2.5%;
+  }
+  .lastTitle {
+    padding-top: 10px;
+    margin: 0px 2.5%;
+  }
+  .loginwrap, .signupwrap {
+    width: 250px;
+    background-color: white;
+    text-align: center;
+    border-radius: 15px;
+    position: relative;
+  }
+  .loginwrap h2, .signupwrap h2 {
+    font-size: 120%;
+    margin-top: 20px;
+  }
+  .loginwrap p, .signupwrap p {
+    margin-top: 10px;
+    font-size: 90%;
+    margin-bottom: 20px;
+  }
+  .loginwrap p:hover, .signupwrap p:hover {
+    color: #ffcc34;
+    cursor: pointer;
+  }
+  .loginwrap input, .signupwrap input {
+    width: 180px;
+    border: #c4c4c4 1px solid;
+  }
+  .loginwrap button, .signupwrap button {
+    background-color: #ffcc34;
+    width: 203px;
+    color: white;
+    border: #ffcc34 2px solid;
+  }
+  .loginwrap button:hover, .signupwrap button:hover {
+    cursor: pointer;
+  }
+  .loginwrap button, .loginwrap input, .signupwrap button, .signupwrap input {
+    padding: 10px;
+    margin-top: 10px;
+    font-size: 90%;
+    border-radius: 10px;
+  }
+  .loginwrap .gender, .signupwrap .gender {
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: 5px;
+  }
+  .loginwrap span, .signupwrap span {
+    margin-right: 5px;
+  }
+}
+/*# sourceMappingURL=base.css.map */

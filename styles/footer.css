@@ -1,0 +1,16 @@
+.footer {
+  background-color: black;
+  color: white;
+  height: 60px;
+}
+
+.footer img {
+  width: 35px;
+  margin-left: 15px;
+  margin-top: 5px;
+}
+
+.reserved {
+  padding-top: 14px;
+}
+/*# sourceMappingURL=footer.css.map */

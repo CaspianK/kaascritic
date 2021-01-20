@@ -1,0 +1,206 @@
+* {
+    margin: 0%;
+    font-family: 'Roboto', sans-serif;
+}
+
+@mixin done($fs) {
+    .done {
+        display: none;
+        opacity: 0;
+        position: sticky;
+        bottom: 0;
+        p {
+            font-size: $fs;
+            padding: 10px;
+            background-color: #ffcc34;
+            width: fit-content;
+            border-radius: 20px;
+            margin: 0 auto;
+        }
+    }
+}
+
+@mixin log($width, $hfs, $pfs, $iw, $fs, $gp) {
+    .loginwrap, .signupwrap {
+        width: $width;
+        background-color: white;
+        text-align: center;
+        border-radius: 15px;
+        position: relative;
+        h2 {
+            font-size: $hfs;
+            margin-top: 20px;
+        }
+        p {
+            margin-top: 10px;
+            font-size: $pfs;
+            margin-bottom: 20px;
+            &:hover {
+                color: #ffcc34;
+                cursor: pointer;
+            }
+        }
+        input {
+            width: $iw;
+            border: rgb(196, 196, 196) 1px solid;
+        }
+        button {
+            background-color: #ffcc34;
+            width: $iw + 23px;
+            color: white;
+            border: #ffcc34 2px solid;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        button, input {
+            padding: 10px;
+            margin-top: 10px;
+            font-size: $fs;
+            border-radius: 10px;
+        }
+        .gender {
+            width: fit-content;
+            margin-right: 5px;
+        }
+        span {
+            margin-right: $gp;
+        }
+    }
+}
+
+body {
+    background-color: #f4f4f4;
+    min-width: 330px;
+}
+
+.closebutton {
+    position: absolute;
+    width: 25px;
+    top: 10px;
+    right: 10px;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    &:active {
+        color: #ffcc34;
+    }
+}
+
+.bg {
+    background-color: rgba(27, 27, 27, 0.4);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signupbg, .loginbg {
+    display: none;
+}
+
+.whiteLink {
+    color: white;
+}
+
+.category_block {
+    text-align: center; 
+    h2 {
+        text-align: left;
+    }
+}
+
+.nextl, .nextr {
+    display: none;
+}
+
+@mixin container($width) {
+    .container {
+        width: $width;
+        margin: 0% auto;
+        background-color: white;
+    }
+}
+
+@mixin block($padding, $margin) {
+    .lastTitle {
+        padding-top: 10px;
+    }
+    .category_block .title, .block{
+        padding-top: $padding;
+        margin: 0px $margin;
+    }
+    .lastTitle {
+        padding-top: 10px;
+        margin: 0px $margin;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    @include done(150%);
+    @include container(1280px);
+    @include block(40px, 50px);
+    @include log(350px, 200%, 100%, 250px, 110%, 15px);
+    .category_block {
+        .title, .lastTitle {
+            font-size: 200%;
+        }
+    }
+    .nextgame {
+        margin-top: 132.5px;
+    }
+    
+    .nextnews {
+        margin-top: 75px;
+    }
+    
+    .nextr, .nextl {
+        display: block;
+        position: absolute;
+        height: 50px;
+        width: 60px;
+        z-index: 9;
+        ;
+        img {
+            width: 25px;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    
+    .nextl {
+        left: calc((100% - 1280px) / 2);
+    }
+    
+    .nextr {
+        left: calc((100% - 1280px) / 2 + 1220px);
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    @include done(150%);
+    @include container(100%);
+    @include block(40px, 50px);
+    @include log(350px, 200%, 100%, 250px, 110%, 15px);
+}
+@media screen and (min-width: 400px) and (max-width: 768px) {
+    @include done(120%);
+    @include container(100%);
+    @include block(30px, 25px);
+    @include log(300px, 150%, 90%, 220px, 90%, 7px);
+}
+@media screen and (max-width: 399px) {
+    @include done(120%);
+    @include container(100%);
+    @include block(20px, 2.5%);
+    @include log(250px, 120%, 90%, 180px, 90%, 5px);
+}

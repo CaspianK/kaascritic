@@ -1,0 +1,153 @@
+@import "base";
+@import "game";
+@import "header";
+@import "footer";
+
+@mixin iframe($width) {
+    .mediawrap {
+        width: $width;
+    }
+}
+
+@mixin about($width) {
+    .about {
+        width: $width;
+        .date {
+            padding-top: 10px;
+            color: rgb(122, 122, 122);
+        }
+        img {
+            width: inherit;
+            border-radius: 10px;
+            margin-top: 10px;
+        }
+    }
+}
+
+@mixin secondaryimg($width) {
+    .secondaryimg {
+        width: $width;
+    }
+}
+
+.about .date {
+    padding-top: 10px;
+    color: rgb(122, 122, 122);
+}
+
+.mediawrap {
+    margin: 20px 0;
+    position: relative;
+    padding-bottom: 56.25%;
+}
+
+iframe{
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.newsframe {
+    display: flex;
+    padding-top: 20px;
+}
+
+.newsdesc {
+    padding-top: 20px;
+    p, q, a, li {
+        font-size: 130%;
+        line-height: 160%;
+        a, q {
+            font-size: 100%;
+        }
+    }
+    q {
+        font-style: italic;
+    }
+    a {
+        color: black;
+        &:hover {
+            color: #ffcc34;
+        }
+    }
+}
+
+.ad {
+    display: none;
+    width: 270px;
+    height: 300px;
+    margin-left: 30px;
+    margin-top: 77px;
+    position: sticky;
+    top: 80px;
+    a {
+        width: inherit;
+    }
+    img {
+        width: inherit;
+        border-radius: 10px;
+    }
+    p {
+        text-align: right;
+    }
+}
+
+.mobilead {
+    height: 100px;
+    background-color: black;
+    background-size: cover;
+    background-position: center;
+    position: sticky;
+    bottom: 0;
+    img {
+        float: right;
+        width: 40px;
+        margin-top: -20px;
+        border-radius: 50px;
+    }
+    a {
+        width: 100%;
+        height: 100px;
+        display: block;
+    }
+}
+
+.ps_ad {
+    background-image: url(../img/ads/psmobile.png);
+}
+
+.x_ad {
+    background-image: url(../img/ads/xboxmobile.png);
+}
+
+.switch_ad {
+    background-image: url(../img/ads/switchmobile.png);
+}
+
+@media screen and (min-width: 1280px) {
+    @include about(880px);
+    @include secondaryimg(440px);
+    @include iframe(880px);
+    .ad {
+        display: block;
+    }
+    .mobilead {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    @include about(80%);
+    @include iframe(100%);
+    .about img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    @include about(100%);
+    @include iframe(100%);
+}

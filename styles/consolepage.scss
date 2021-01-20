@@ -1,0 +1,285 @@
+@import "base";
+@import "featured";
+@import "game";
+@import "header";
+@import "footer";
+
+@mixin cover($height) {
+    .cover {
+        height: $height;
+    }
+}
+
+@mixin pslogo($ptop, $pleft, $width, $mottofs, $buyfs) {
+    .pslogo {
+        padding-top: $ptop;
+        padding-left: $pleft;
+        width: $width;
+        .motto {
+            font-size: $mottofs;
+        }
+        .whereBuy {
+            padding-top: 5px;
+            font-size: $buyfs;
+            color: #c82621;
+        }
+    }
+}
+
+@mixin xboxlogo($ptop, $pleft, $width, $fs) {
+    .xboxlogo {
+        padding-top: $ptop;
+        padding-left: $pleft;
+        width: $width;
+        .whereBuy {
+            padding-top: 5px;
+            font-size: $fs;
+            color: #107c10;
+        }
+    }
+}
+
+@mixin switchlogo($ptop, $pleft, $width, $fs) {
+    .switchlogo {
+        padding-top: $ptop;
+        padding-left: $pleft;
+        width: $width;
+        .whereBuy {
+            font-size: $fs;
+            color: #2063a7;
+        }
+    }
+}
+
+@mixin parallax($height, $fontsize, $bcheight, $buttonp, $psb, $xb, $sb, $ppad) {
+    .parallax {
+        height: $height;
+    }
+    .buttoncontainer {
+        font-size: $fontsize;
+        height: $bcheight;
+        padding-top: $buttonp;
+    }    
+    .psbuttoncontainer {
+        width: $psb;
+    }    
+    .xboxbuttoncontainer {
+        width: $xb;
+    }    
+    .switchbuttoncontainer {
+        width: $sb;
+    }    
+    .button p {
+        padding-top: $ppad;
+    }
+}
+
+@mixin map($width, $height, $fs) {
+    #map {
+        margin-top: 10px;
+        width: $width;
+        height: $height;
+        border-radius: 15px;
+        h2 {
+            opacity: 1;
+            margin-bottom: 5px;
+            margin-right: 5px;
+        }
+        .psbuttonlink {
+            color: #c82621;
+            &:active {
+                color: #ffcc34;
+            }
+        }        
+    }
+    h2 {
+        margin-top: 10px;
+        text-align: center;
+        font-size: $fs;
+    }
+}
+
+@mixin sub($width, $hfs, $pfs, $iw, $fs) {
+    .subwrap {
+        width: $width;
+        background-color: white;
+        text-align: center;
+        border-radius: 15px;
+        position: relative;
+        h2 {
+            font-size: $hfs;
+            margin-top: 20px;
+        }
+        p {
+            margin-top: 5px;
+            font-size: $pfs;
+        }
+        input {
+            width: $iw;
+        }
+        button {
+            background-color: #ffcc34;
+            width: $iw + 23px;
+            margin-bottom: 25px;
+            color: white;
+            &:hover {
+                cursor: pointer;
+            }
+        }
+        button, input {
+            padding: 10px;
+            border: #ffcc34 2px solid;
+            margin-top: 15px;
+            font-size: $fs;
+            border-radius: 10px;
+        }
+    }
+}
+
+.red::placeholder {
+    color: red;
+}
+
+.mapbg, .subbg {
+    display: none;
+}
+
+.mapwrap {
+    background-color: #ebe9e5;
+    border-radius: 15px;
+    position: relative;
+}
+
+.whereBuy {
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.coverwrap, h1, h2, .nextl, .nextr {
+    opacity: 0;
+}
+
+.cover {
+    background-size: cover;
+    background-position: center;
+    .companylogo {
+        color: white;
+        text-align: center;
+        img {
+            width: inherit;
+        }
+    }
+}
+
+.moralescover {
+    background-image: url("../img/covers/ps.png");
+}
+
+.xboxcover {
+    background-image: url("../img/covers/xbox.png");
+}
+
+.mariocover {
+    background-image: url("../img/covers/mario.png");
+}
+
+.new {
+    margin-top: 0%;
+    background-color: white;
+    color: black;
+}
+
+.parallax {
+    background-position: center;
+    background-size: cover;
+}
+
+.buttoncontainer {
+    color: white;
+    text-align: center;
+    margin: 0 auto;
+}    
+
+.button {
+    width: inherit;
+    height: inherit;
+    cursor: pointer;
+    box-shadow: 5px 5px 80px black;
+}
+
+.psparallax {
+    background-image: url(../img/covers/pscover.png);
+}
+
+.xboxparallax {
+    background-image: url(../img/covers/xcover.png);
+}
+
+.switchparallax {
+    background-image: url(../img/covers/switchcover.png);
+}
+
+.dimmed {
+    width: inherit;
+    height: inherit;
+    background-color: rgba($color: #000000, $alpha: 0.5);
+}
+
+.psbutton {
+    background-color: #36109a;
+}
+
+.xboxbutton {
+    background-color: #107c10;
+}
+
+.switchbutton {
+    background-color: #d41f28;
+}
+
+@media screen and (min-width: 1280px) {
+    @include cover(400px);
+    @include map(700px, 500px, 170%);
+    @include xboxlogo(80px, 200px, 200px, 110%);
+    @include sub(350px, 200%, 100%, 250px, 120%);
+    @include switchlogo(70px, 120px, 230px, 110%);
+    @include pslogo(120px, 60px, 300px, 170%, 110%);
+    @include parallax(400px, 180%, 70px, 160px, 270px, 300px, 340px, 20px);
+    .parallax {
+        background-attachment: fixed;
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) { 
+    @include cover(400px);
+    @include map(500px, 300px, 150%);
+    @include sub(350px, 200%, 100%, 250px, 120%);
+    @include xboxlogo(109px, 150px, 150px, 110%);
+    @include switchlogo(93.5px, 80px, 190px, 110%);
+    @include pslogo(132.5px, 30px, 300px, 150%, 110%);
+    @include parallax(400px, 180%, 70px, 160px, 270px, 300px, 340px, 20px);
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) { 
+    @include cover(200px); 
+    @include map(380px, 300px, 120%);
+    @include sub(300px, 150%, 90%, 220px, 100%);
+    @include xboxlogo(35.5px, 60px, 100px, 100%);
+    @include switchlogo(39px, 40px, 100px, 100%);
+    @include pslogo(52.5px, 30px, 180px, 110%, 100%);
+    @include parallax(200px, 120%, 50px, 75px, 180px, 200px, 240px, 15px);
+}
+
+@media screen and (max-width: 399px) { 
+    @include cover(200px);
+    @include map(330px, 300px, 120%);
+    @include xboxlogo(41px, 40px, 90px, 90%);
+    @include sub(250px, 120%, 90%, 180px, 100%);
+    @include switchlogo(50.5px, 30px, 80px, 85%);
+    @include pslogo(52.5px, 20px, 150px, 100%, 90%);
+    @include parallax(200px, 120%, 50px, 75px, 180px, 200px, 240px, 15px);
+}

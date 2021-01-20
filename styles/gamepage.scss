@@ -1,0 +1,373 @@
+@import "base";
+@import "game";
+@import "header";
+@import "footer";
+
+@mixin about($height, $lwidth, $rwidth, $hfs, $dmtop, $dfs, $dpadding, $cwidth, $cheight, $framep, $ctop, $htop) {
+    .left {
+        width: $lwidth;
+        height: $height;
+    }
+    .cover {
+        margin-top: $ctop;
+        width: $cwidth;
+        height: $cheight;
+        border-radius: 10px;
+    }
+    .right {
+        height: $height;
+        width: $rwidth;
+        h1 {
+            padding-top: $htop;
+            font-size: $hfs;
+        }
+        .description {
+            margin-top: $dmtop;
+            padding-right: $dpadding;
+            font-size: $dfs;
+        }
+    }
+    .frame {
+        padding-left: $framep;
+    }
+}
+
+@mixin rating($size, $fs, $mtop) {
+    .rating {
+        width: $size;
+        height: $size;
+        p {
+            font-size: $fs;
+            margin-top: $mtop;
+        }
+    }
+}
+
+
+@mixin mobileDescription($p) {
+    .mobileDescriptionWrap {
+        display: block;
+    }
+    .mobileDescription {
+        padding: 0 $p;
+    }
+}
+
+@mixin mediacontainer($mright, $height, $width, $mtop, $vmargin) {
+    .mediacontainer {
+        margin-right: $mright;    
+        height: $height;
+        width: $width;
+        margin-top: $mtop; 
+    }
+    .visuals {
+        margin-top: $vmargin;
+    }    
+}
+
+@mixin review($mright, $height, $width, $usize, $ptop, $pfs, $untop, $unfs, $datefs, $dpadding) {
+    .review {
+        margin-right: $mright;
+        height: $height;
+        width: $width;
+    }    
+    .newsfiller {
+        height: $height;
+    }    
+    .user_rating {
+        width: $usize;
+        height: $usize;
+        p {
+            padding-top: $ptop;
+            font-size: $pfs;
+        }
+    }
+    .username {
+        padding-top: $untop;
+        font-size: $unfs;
+    } 
+    .date {
+        font-size: $datefs;
+    }     
+    .desc {
+        padding: $dpadding 10px 10px 10px;
+    }    
+}
+
+@mixin reviewbutton($mtop) {
+    .reviewTitle {
+        .reviewbutton {
+            margin-top: $mtop;
+        }
+    }
+}
+
+.rating {
+    margin-top: 15px;
+    margin-right: 15px;
+    border-radius: 10px;
+    float: left;
+    p {
+        color: white;
+        text-align: center;
+    }
+}
+
+.mobileDescriptionTitle {
+    padding-top: 0;
+}
+
+.mediacontainer {  
+    flex: 0 0 auto;
+    border-radius: 10px;
+    overflow: hidden;   
+}
+.visuals {
+    .trailers {
+        font-size: 200%;
+        padding-top: 10px;
+    }
+}   
+
+.review {   
+    flex: 0 0 auto;
+    border-radius: 10px;
+    border: 3px solid rgb(90, 90, 90);
+}    
+.user_rating {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 10px;
+    p {
+        text-align: center;
+        color: white;
+    }
+}  
+.thx {
+    float: right;
+    padding-right: 10px;
+    font-size: 110%;
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.reviewTitle {
+    display: flex;
+    h2 {
+        margin-right: 10px;
+    }
+    .reviewbutton {
+        background-color: black;
+        color: white;
+        padding: 7px;
+        border-radius: 20px;
+        height: fit-content;
+        font-size: 70%;
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+.mobileDescriptionWrap {
+    display: none;
+}
+
+.reviewblock {
+    text-align: left;
+}
+
+.about {
+    display: flex;
+}
+
+.additional {
+    display: flex;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+.good {
+    background-color: #66cc33;
+}
+
+.fine {
+    background-color: #ffcc33;
+}
+
+.bad {
+    background-color: #ff0000;
+}
+
+.unknown {
+    background-color: grey;
+}
+
+strong {
+    color: #ff0000;
+}
+
+.visualsdesktop {
+    display: none;
+}
+
+.visualelements {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+.media {
+    height: inherit;
+    width: inherit;
+    border-radius: inherit;
+}
+
+.mediafiller {
+    width: 17.5px;
+}
+
+.previews {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    @include rating(120px, 350%, 28px);
+    @include reviewbutton(16px);
+    @include mediacontainer(32.5px, 200px, 356px, 20px, 8px); 
+    @include review(32.5px, 180px, 400px, 50px, 12px, 130%, 10px, 150%, 100%, 20px);
+    @include about(500px, 350px, 880px, 250%, 15px, 120%, 50px, 300px, 450px, 50px, 25px, 20px);   
+    .mediacontainer img {
+        display: block;
+        transition: transform .4s; 
+    }
+    .mediacontainer:hover img {
+        transform: scale(1.2);
+        transform-origin: 50% 50%;
+        cursor: pointer;
+    }
+    .visualsdesktop {
+        display: block;
+    }
+    .visualsmobile {
+        display: none;
+    }
+    .nexttrail {
+        margin-top: -30px;
+        img {
+            width: 15px;
+        }
+    }
+    .nextrev {
+        margin-top: 16px;
+        img {
+            width: 15px;
+        }
+    }
+    .nexttraill {
+        left: calc((100% - 1280px) / 2 + 720px);
+    }
+    .nexttrailr {
+        left: calc((100% - 1280px) / 2 + 1245px);
+    }
+    .nextrevl {
+        left: calc((100% - 1280px) / 2 + 280px);
+    }
+    .nextrevr {
+        left: calc((100% - 1280px) / 2 + 1245px);
+    }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    @include rating(120px, 350%, 28px); 
+    @include reviewbutton(11px);
+    @include mediacontainer(32.5px, 225px, 400px, 0, 0);
+    @include review(32.5px, 180px, 400px, 50px, 12px, 130%, 10px, 150%, 100%, 20px);
+    @include about(490px, 320px, calc(100% - 370px), 230%, 15px, 120%, 0px, 300px, 450px, 50px, 25px, 20px);
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+    @include mobileDescription(25px);
+    @include rating(80px, 250%, 15px); 
+    @include reviewbutton(11px);
+    @include mediacontainer(28px, 141px, 250px, 0, 0);
+    @include review(28px, 190px, 250px, 30px, 6px, 90%, 8px, 100%, 80%, 10px);
+    @include about(265px, 170px, calc(100% - 195px), 170%, 5px, 100%, 0px, 150px, 225px, 25px, 25px, 20px);
+    .desktopDescription {
+        display: none;
+    }
+    .mobileDescriptionWrap {
+        margin-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 399px) { 
+    @include mobileDescription(2.5%);
+    @include rating(80px, 250%, 15px); 
+    @include reviewbutton(11px);
+    @include mediacontainer(28px, 141px, 250px, 0, 0);
+    @include review(28px, 190px, 250px, 30px, 6px, 90%, 8px, 100%, 80%, 10px);
+    @include about(250px, 170px, calc(100% - 195px), 140%, 5px, 100%, 0px, 150px, 225px, 2.5%, 10px, 10px);
+    .desktopDescription {
+        display: none;
+    }
+    .mobileDescriptionWrap {
+        margin-bottom: 15px;
+    }
+}
+
+.reviewbg {
+    display: none;
+}
+
+.revwritewrap {
+    background-color: white;
+    border-radius: 15px;
+    position: relative;
+    border-color: white;
+    margin-right: 0;
+    height: auto;
+    textarea {
+        display: block;
+        margin: 10px auto 10px auto;
+        width: calc(100% - 25px);
+        height: 80px;
+        resize: none;
+        font-size: 100%;
+    }
+    .bottom {
+        display: flex;
+        justify-content: space-between;
+        #revwriterating {
+            margin-left: 8px;
+            width: 50%;
+            color: red;
+            margin-top: 7px;
+            margin-bottom: 15px;
+        }
+        button {
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 5px;
+            width: 30%;
+            border-radius: 15px;
+            background-color: #ffcc33;
+            border: none;
+            font-size: 120%;
+            color: white;
+        }
+    }
+}

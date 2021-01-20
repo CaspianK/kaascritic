@@ -1,0 +1,219 @@
+@media screen and (min-width: 1280px) {
+  .featured_slide {
+    display: none;
+    height: 420px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: .7;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: .7;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .featured_1 {
+    background-image: url(../img/covers/main1.png);
+  }
+  .featured_2 {
+    background-image: url(../img/covers/main2.png);
+  }
+  .featured_3 {
+    background-image: url(../img/covers/main3.png);
+  }
+  .featured_4 {
+    background-image: url(../img/covers/main4.png);
+  }
+  .new {
+    margin-top: 50px;
+    background-color: black;
+    text-align: center;
+    color: white;
+  }
+  .new h1 {
+    padding-top: 40px;
+    font-size: 300%;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  .featured_slide {
+    display: none;
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: .7;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: .7;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .featured_1 {
+    background-image: url(../img/covers/main1.png);
+  }
+  .featured_2 {
+    background-image: url(../img/covers/main2.png);
+  }
+  .featured_3 {
+    background-image: url(../img/covers/main3.png);
+  }
+  .featured_4 {
+    background-image: url(../img/covers/main4.png);
+  }
+  .new {
+    margin-top: 50px;
+    background-color: black;
+    text-align: center;
+    color: white;
+  }
+  .new h1 {
+    padding-top: 40px;
+    font-size: 300%;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .featured_slide {
+    display: none;
+    height: 200px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: .7;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: .7;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .featured_1 {
+    background-image: url(../img/covers/main1.png);
+  }
+  .featured_2 {
+    background-image: url(../img/covers/main2.png);
+  }
+  .featured_3 {
+    background-image: url(../img/covers/main3.png);
+  }
+  .featured_4 {
+    background-image: url(../img/covers/main4.png);
+  }
+  .new {
+    margin-top: 25px;
+    background-color: black;
+    text-align: center;
+    color: white;
+  }
+  .new h1 {
+    padding-top: 30px;
+    font-size: 200%;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .featured_slide {
+    display: none;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+  }
+  .fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 2s;
+    animation-name: fade;
+    animation-duration: 2s;
+  }
+  @-webkit-keyframes fade {
+    from {
+      opacity: .7;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  @keyframes fade {
+    from {
+      opacity: .7;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .featured_1 {
+    background-image: url(../img/covers/main1.png);
+  }
+  .featured_2 {
+    background-image: url(../img/covers/main2.png);
+  }
+  .featured_3 {
+    background-image: url(../img/covers/main3.png);
+  }
+  .featured_4 {
+    background-image: url(../img/covers/main4.png);
+  }
+  .new {
+    margin-top: 25px;
+    background-color: black;
+    text-align: center;
+    color: white;
+  }
+  .new h1 {
+    padding-top: 30px;
+    font-size: 150%;
+  }
+  .new h1 {
+    margin-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=featured.css.map */

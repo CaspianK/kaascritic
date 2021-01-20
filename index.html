@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>kaascritic</title>
+        <link rel="icon" href="img/icons/favicon.png">
+        <link href="styles/style.css" type="text/css" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/slides.js"></script>
+    </head>
+    <body>
+        <div class="header">
+            <div class="container container_header">
+                <div class="logo"><img src="img/icons/logo.png" alt="kaascritic logo" onclick="window.window.location.reload()"></div>
+                <div class="menu">
+                    <div class="menu_item"><a class="menulink" href="ps.html">PLAYSTATION</a></div>
+                    <div class="menu_item"><a class="menulink" href="xbox.html">XBOX</a></div>
+                    <div class="menu_item"><a class="menulink" href="switch.html">SWITCH</a></div>
+                    <div class="menu_item menulink login">LOG IN</div>
+                    <div><img src="img/icons/menuicon.png" alt="menu icon" class="burgericon" id="menuicon"></div>
+                </div>
+            </div>
+        </div>
+        <div class="smallmenu">
+            <div class="smallcontainer">
+                <div class="smallmenu_item"><a class="menulink" href="ps.html">PLAYSTATION</a></div>
+                <div class="smallmenu_item"><a class="menulink" href="xbox.html">XBOX</a></div>
+                <div class="smallmenu_item"><a class="menulink" href="switch.html">SWITCH</a></div>
+                <div class="smallmenu_item menulink login">LOG IN</div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="container">
+                <div class="block">
+                    <div class="featured">
+                        <div class="featured_slide featured_1 fade"></div>
+                        <div class="featured_slide featured_2 fade"></div>
+                        <div class="featured_slide featured_3 fade"></div>
+                        <div class="featured_slide featured_4 fade"></div>
+                    </div>
+                </div>
+
+                <div class="new">
+                    <h1>LATEST RELEASES</h1>
+                    <div class="games games_new" id="scrollm1">
+                        <div class="nextl nextgame">
+                            <img src="img/icons/leftwhite.png" alt="Swipe right" id="scrollml1">
+                        </div>
+                        <div class="nextr nextgame">
+                            <img src="img/icons/rightwhite.png" alt="Swipe right" id="scrollmr1">
+                        </div>
+                        <a class="whiteLink" href="games/hwaoc.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/hwaoc.png" alt="Game cover">
+                            <h3>Hyrule Warriors: Age of Calamity</h3>
+                            <p>Nov 20, '20</p>
+                        </div></a>
+                        <a class="whiteLink" href="games/codcw.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/codcw.png" alt="Game cover">
+                            <h3>Call of Duty: Cold War</h3>
+                            <p>Nov 13, '20</p>
+                        </div></a>
+                        <a class="whiteLink" href="games/morales.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/morales.png" alt="Game cover">
+                            <h3>Spider-Man: Miles Morales</h3>
+                            <p>Nov 12, '20</p>
+                        </div></a>
+                        <a class="whiteLink" href="games/jd21.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/jd21.png" alt="Game cover">
+                            <h3>Just Dance 2021</h3>
+                            <p>Nov 12, '20</p>
+                        </div></a>
+                        <a class="whiteLink" href="games/sackboy.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/sackboy.png" alt="Game cover">
+                            <h3>Sackboy: A Big Adventure</h3>
+                            <p>Nov 12, '20</p>
+                        </div></a>
+                        <a class="whiteLink" href="games/valhalla.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/valhalla.png" alt="Game cover">
+                            <h3>Assassin's Creed Valhalla</h3>
+                            <p>Nov 10, '20</p>
+                        </div></a>
+                        <a class="whiteLink" href="games/smb35.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/smb35.png" alt="Game cover">
+                            <h3>Super Mario Bros. 35</h3>
+                            <p>Oct 1, '20</p>
+                        </div></a>
+                        <a class="whiteLink" href="games/got.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/got.png" alt="Game cover">
+                            <h3>Ghost of Tsushima</h3>
+                            <p>Jul 17, '20</p>
+                        </div></a>
+                        <a class="whiteLink" href="games/alyx.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/alyx.png" alt="Game cover">
+                            <h3>Half-Life: Alyx</h3>
+                            <p>Mar 23, '20</p>
+                        </div></a>
+                        <a class="whiteLink" href="games/nioh2.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/nioh2.png" alt="Game cover">
+                            <h3>Nioh 2</h3>
+                            <p>Mar 12, '20</p>
+                        </div></a>
+                        <div class="game filler"></div>
+                    </div>
+                </div>
+
+
+                <div class="category_block">
+                    <h2 class="title">Trending now</h2>
+                    <div class="games" id="scrollm2">
+                        <div class="nextl nextgame">
+                            <img src="img/icons/left.png" alt="Swipe right" id="scrollml2">
+                        </div>
+                        <div class="nextr nextgame">
+                            <img src="img/icons/right.png" alt="Swipe right" id="scrollmr2">
+                        </div>
+                        <a href="games/tlou2.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/tlou2.png" alt="Game cover">
+                            <h3>The Last of Us: Part II</h3>
+                            <p>Jun 19, '20</p>
+                        </div></a>
+                        <a href="games/morales.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/morales.png" alt="Game cover">
+                            <h3>Spider-Man: Miles Morales</h3>
+                            <p>Nov 12, '20</p>
+                        </div></a>
+                        <a href="games/fifa21.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/fifa21.png" alt="Game cover">
+                            <h3>FIFA 21</h3>
+                            <p>Oct 9, '20</p>
+                        </div></a>
+                        <a href="games/acnh.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/acnh.png" alt="Game cover">
+                            <h3>Animal Crossing: New Horizons</h3>
+                            <p>Mar 20, '20</p>
+                        </div></a>
+                        <a href="games/rdr2.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/rdr2.png" alt="Game cover">
+                            <h3>Red Dead Redemption II</h3>
+                            <p>Oct 26, '18</p>
+                        </div></a>
+                        <a href="games/minecraft.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/minecraft.png" alt="Game cover">
+                            <h3>Minecraft</h3>
+                            <p>May 17, '09</p>
+                        </div></a>
+                        <a href="games/gtav.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/gtav.png" alt="Game cover">
+                            <h3>Grand Theft Auto V</h3>
+                            <p>Sep 17, '13</p>
+                        </div></a>
+                        <div class="game filler"></div>
+                    </div>
+                </div>
+
+                <div class="category_block">
+                    <h2 class="title">You might like</h2>
+                    <div class="games" id="scrollm3">
+                        <div class="nextl nextgame">
+                            <img src="img/icons/left.png" alt="Swipe right" id="scrollml3">
+                        </div>
+                        <div class="nextr nextgame">
+                            <img src="img/icons/right.png" alt="Swipe right" id="scrollmr3">
+                        </div>
+                        <a href="games/daysgone.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/daysgone.png" alt="Game cover">
+                            <h3>Days Gone</h3>
+                            <p>Apr 26, '191</p>
+                        </div></a>
+                        <a href="games/eternal.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/eternal.png" alt="Game cover">
+                            <h3>Doom: Eternal</h3>
+                            <p>Mar 20, '20</p>
+                        </div></a>
+                        <a href="games/exodus.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/exodus.png" alt="Game cover">
+                            <h3>Metro Exodus</h3>
+                            <p>Feb 15, '19</p>
+                        </div></a>
+                        <a href="games/sentinels13.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/sentinels13.png" alt="Game cover">
+                            <h3>13 Sentinels: Aegis Rim</h3>
+                            <p>Sep 22, '20</p>
+                        </div></a>
+                        <a href="games/f4.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/f4.png" alt="Game cover">
+                            <h3>Fallout 4</h3>
+                            <p>Nov 10, '15</p>
+                        </div></a>
+                        <a href="games/sm3das.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/sm3das.png" alt="Game cover">
+                            <h3>Super Mario 3D All-Stars</h3>
+                            <p>Sep 18, '20</p>
+                        </div></a>
+                        <a href="games/sm.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/sm.png" alt="Game cover">
+                            <h3>Spider-Man</h3>
+                            <p>Sep 7, '18</p>
+                        </div></a>
+                        <a href="games/legion.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/legion.png" alt="Game cover">
+                            <h3>Watch Dogs: Legion</h3>
+                            <p>Oct 29, '20</p>
+                        </div></a>
+                        <a href="games/sunseto.html"><div class="game">
+                            <img class="thumbnail" src="img/thumbnails/sunseto.png" alt="Game cover">
+                            <h3>Sunset Overdrive</h3>
+                            <p>Oct 28, '14</p>
+                        </div></a>
+                        <div class="game filler"></div>
+                    </div>
+                </div>
+
+                <div class="category_block">
+                    <h2 class="lastTitle">News</h2>
+                    <div class="games last" id="scrollm4">
+                        <div class="nextl nextnews">
+                            <img src="img/icons/left.png" alt="Swipe right" id="scrollml4">
+                        </div>
+                        <div class="nextr nextnews">
+                            <img src="img/icons/right.png" alt="Swipe right" id="scrollmr4">
+                        </div>
+                        <a href="news/ps_restock.html"><div class="game">
+                            <img class="thumbnail_news" src="img/news/ps_restock.png" alt="News cover">
+                            <h3 class="newsTitle">Sony promises more PS5 stock for the holidays</h3>
+                            <p class="newsParagraph">Sony confirmed it would have more PlayStation 5 consoles available after what the company is calling its “biggest” launch ever.</p>
+                        </div></a>
+                        <a href="news/coldwar.html"><div class="game">
+                            <img class="thumbnail_news" src="img/news/coldwar.png" alt="News cover">
+                            <h3 class="newsTitle">The new Call of Duty is a bloated mess, even when the individual parts succeed</h3>
+                            <p class="newsParagraph">'Cold War' is so large it’s hard to fit anything else into your rotation or on your hard drive.</p>
+                        </div></a>
+                        <a href="news/xbox_retro.html"><div class="game">
+                            <img class="thumbnail_news" src="img/news/xbox_retro.png" alt="News cover">
+                            <h3 class="newsTitle">The Xbox Series S and Series X can now run retro emulators</h3>
+                            <p class="newsParagraph">Retro gamers have managed to get the popular emulator frontend Retro Arch installed on the Xbox Series S and Series X consoles.</p>
+                        </div></a>
+                        <a href="news/valhalla.html"><div class="game">
+                            <img class="thumbnail_news" src="img/news/valhalla.png" alt="News cover">
+                            <h3 class="newsTitle">How Assassin’s Creed Valhalla finally fixed the series’ combat</h3>
+                            <p class="newsParagraph">In Odyssey and Origins, combat was slow and either tactical or tedious, depending on who you asked. Here not.</p>
+                        </div></a>
+                        <a href="news/cyberpunk.html"><div class="game">
+                            <img class="thumbnail_news" src="img/news/cyberpunk.png" alt="News cover">
+                            <h3 class="newsTitle">Cyberpunk 2077 digital pre-orders higher than expected</h3>
+                            <p class="newsParagraph">CD Projekt Red is expecting at least 50% of the early sales of Cyberpunk 2077 to be digital.</p>
+                        </div></a>
+                        <a href="news/switch_sales.html"><div class="game">
+                            <img class="thumbnail_news" src="img/news/switch_sales.png" alt="News cover">
+                            <h3 class="newsTitle">Switch has been the US’s bestselling console for 23 months</h3>
+                            <p class="newsParagraph">It’s been a good two years for the Nintendo Switch. The tablet had its best month ever, ahead of the next-gens.</p>
+                        </div></a>
+                        <a href="news/ps_fifa.html"><div class="game">
+                            <img class="thumbnail_news" src="img/news/ps_fifa.png" alt="News cover">
+                            <h3 class="newsTitle">‘Feel The Match’ with DualSense and FIFA 21 on PS5</h3>
+                            <p class="newsParagraph">EA Games just released the first gameplay details of FIFA 21 on PS5, and it's on ‘the next level’.</p>
+                        </div></a>
+                        <a href="news/switch_vslite.html"><div class="game">
+                            <img class="thumbnail_news" src="img/news/switch_vslite.png" alt="News cover">\
+                            <h3 class="newsTitle">Nintendo Switch vs. Switch Lite: Deciding Which to Buy</h3>
+                            <p class="newsParagraph">Here are some of the major cons and pros of each of the two consoles. If you cannot decide which to buy this article will be helpful.</p>
+                        </div></a>
+                        <a href="news/xbox_restock.html"><div class="game">
+                            <img class="thumbnail_news" src="img/news/xbox_restock.png" alt="News cover">
+                            <h3 class="newsTitle">Xbox Series X and S just got restocked for Holidays</h3>
+                            <p class="newsParagraph">Now is the time for you to buy the new console for you and your relatives.</p>
+                        </div></a>
+                        <div class="game filler"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="container container_header">
+                <div class="reserved">
+                    <p>©kaascritic, 2020</p>
+                </div>
+                <div class="socials">
+                    <a href="https://www.instagram.com/metacritic/" target="_blank"><img src="img/icons/instagram.png" alt="instagram link"></a>
+                    <a href="https://twitter.com/metacritic" target="_blank"><img src="img/icons/twitter.png" alt="twitter link"></a>
+                    <a href="https://t.me/metacritic" target="_blank"><img src="img/icons/telegram.png" alt="telegram link"></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg loginbg">
+            <form class="loginwrap" onsubmit="return false;">
+                <h2>Welcome back</h2>
+                <img id="loginclose" class="closebutton" src="img/icons/close.png" alt="close button">
+                <input type="text" id="loginusername" placeholder="Username" maxlength="10">
+                <input type="password" id="loginpass" placeholder="Password" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+                <button id="loginbutton">LOG IN</button>
+                <p id="signuplink">Don't have an account yet?</p>
+            </form>
+        </div>
+
+        <div class="bg signupbg">
+            <form class="signupwrap" onsubmit="return false;">
+                <h2>Welcome</h2>
+                <img id="signupclose" class="closebutton" src="img/icons/close.png" alt="close button">
+                <input type="text" id="signupemail" placeholder="Email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Incorrect email address">
+                <input type="text" id="signupusername" placeholder="Username">
+                <input type="password" id="signuppass1" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one  number and one uppercase and lowercase letter, and at least 8 or more characters">
+                <input type="password" id="signuppass2" placeholder="Repeat the password"><br>
+                <input type="radio" name="gender" value="Male" class="gender">Male<span></span>
+                <input type="radio" name="gender" value="Female" class="gender">Female<span></span>
+                <input type="radio" name="gender" value="Other" class="gender">Other<span></span>
+                <button id="signupbutton">SIGN UP</button>
+                <p id="loginlink">Have an account already?</p>
+            </form>
+        </div>
+
+        <div class="done logdone">
+            <p class="message"><span class="logmessage"></span><span id="uname"></span></p>
+        </div>
+    </body>
+</html>

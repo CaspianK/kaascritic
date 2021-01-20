@@ -1,0 +1,74 @@
+@mixin featured($height) {
+    .featured_slide {
+        display: none;
+        height: $height;
+        background-size: cover;
+        background-position: center;
+        border-radius: 10px;
+    }
+    .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 2s;
+        animation-name: fade;
+        animation-duration: 2s;
+    }
+    
+    @-webkit-keyframes fade {
+        from {opacity: .7}
+        to {opacity: 1}
+    }
+    
+    @keyframes fade {
+        from {opacity: .7}
+        to {opacity: 1}
+    }
+    .featured_1 {
+        background-image: url(../img/covers/main1.png);
+    }
+    .featured_2 {
+        background-image: url(../img/covers/main2.png);
+    }
+    .featured_3 {
+        background-image: url(../img/covers/main3.png);
+    }
+    .featured_4 {
+        background-image: url(../img/covers/main4.png);
+    }
+}
+
+@mixin new($margin, $padding, $fontsize) {
+    .new {
+        margin-top: $margin;
+        // height: $height;
+        background-color: black;
+        text-align: center;
+        color: white;
+        h1 {
+            padding-top: $padding;
+            font-size: $fontsize;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) {
+    @include featured(420px);
+    @include new(50px, 40px, 300%);
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+    @include featured(400px);
+    @include new(50px, 40px, 300%);
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+    @include featured(200px);
+    @include new(25px, 30px, 200%);
+}
+
+@media screen and (max-width: 399px) {
+    @include featured(150px);
+    @include new(25px, 30px, 150%);
+    .new h1 {
+        margin-bottom: 20px;
+    }
+}

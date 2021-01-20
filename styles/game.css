@@ -1,0 +1,244 @@
+@media screen and (min-width: 1280px) {
+  .games {
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .games::-webkit-scrollbar {
+    display: none;
+  }
+  .last {
+    padding-bottom: 40px;
+  }
+  .game {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin-right: 32.5px;
+    cursor: pointer;
+  }
+  .game h3 {
+    max-width: 210px;
+    margin-top: 10px;
+    font-size: 150%;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  .game .newsTitle, .game .newsParagraph {
+    max-width: 371.7px;
+  }
+  .thumbnail {
+    width: 210px;
+    height: 315px;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  .gamefiller {
+    height: 315px;
+  }
+  .newsfiller {
+    width: 18px;
+    height: 200px;
+  }
+  .thumbnail_news {
+    width: 371.7px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .filler {
+    width: 17.5px;
+  }
+  .games_new {
+    padding: 50px 17.5px 50px 50px;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1279px) {
+  .games {
+    padding-left: 50px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .games::-webkit-scrollbar {
+    display: none;
+  }
+  .last {
+    padding-bottom: 40px;
+  }
+  .game {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin-right: 32.5px;
+    cursor: pointer;
+  }
+  .game h3 {
+    max-width: 210px;
+    margin-top: 10px;
+    font-size: 150%;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  .game .newsTitle, .game .newsParagraph {
+    max-width: 371.7px;
+  }
+  .thumbnail {
+    width: 210px;
+    height: 315px;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  .gamefiller {
+    height: 315px;
+  }
+  .newsfiller {
+    width: 18px;
+    height: 200px;
+  }
+  .thumbnail_news {
+    width: 371.7px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .filler {
+    width: 17.5px;
+  }
+  .games_new {
+    padding: 50px 17.5px 50px 50px;
+  }
+}
+
+@media screen and (min-width: 400px) and (max-width: 768px) {
+  .games {
+    padding-left: 25px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .games::-webkit-scrollbar {
+    display: none;
+  }
+  .last {
+    padding-bottom: 40px;
+  }
+  .game {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin-right: 28px;
+    cursor: pointer;
+  }
+  .game h3 {
+    max-width: 140px;
+    margin-top: 10px;
+    font-size: 120%;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  .game .newsTitle, .game .newsParagraph {
+    max-width: 250px;
+  }
+  .thumbnail {
+    width: 140px;
+    height: 210px;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  .gamefiller {
+    height: 210px;
+  }
+  .newsfiller {
+    width: 18px;
+    height: 150px;
+  }
+  .thumbnail_news {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+  }
+  .filler {
+    width: 3px;
+  }
+  .games_new {
+    padding: 25px 17.5px 40px 25px;
+  }
+}
+
+@media screen and (max-width: 399px) {
+  .games {
+    padding-left: 2.5%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+  .games::-webkit-scrollbar {
+    display: none;
+  }
+  .last {
+    padding-bottom: 40px;
+  }
+  .game {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 auto;
+            flex: 0 0 auto;
+    margin-right: 28px;
+    cursor: pointer;
+  }
+  .game h3 {
+    max-width: 140px;
+    margin-top: 10px;
+    font-size: 120%;
+    margin-bottom: 5px;
+    position: relative;
+  }
+  .game .newsTitle, .game .newsParagraph {
+    max-width: 250px;
+  }
+  .thumbnail {
+    width: 140px;
+    height: 210px;
+    border-radius: 10px;
+    opacity: 0;
+  }
+  .gamefiller {
+    height: 210px;
+  }
+  .newsfiller {
+    width: 18px;
+    height: 150px;
+  }
+  .thumbnail_news {
+    width: 250px;
+    height: 150px;
+    border-radius: 10px;
+  }
+  .filler {
+    width: 0.1px;
+  }
+  .games_new {
+    padding: 2.5% 17.5px 30px 2.5%;
+  }
+}
+/*# sourceMappingURL=game.css.map */
